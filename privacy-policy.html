@@ -71,6 +71,24 @@
             color: #8B4513;
             font-weight: bold;
         }
+        .ai-provider-info {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .ai-provider {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .provider-name {
+            font-weight: bold;
+            color: #8B4513;
+        }
     </style>
 </head>
 <body>
@@ -81,113 +99,185 @@
 
     <div class="nav-links">
         <a href="index.html">Back to Support</a>
+        <a href="terms-of-use.html">Terms of Use</a>
     </div>
 
     <div class="content">
-        <p><strong>Effective Date</strong>: July 15, 2025<br>
-        <strong>Last Updated</strong>: July 15, 2025</p>
+        <p><strong>Last Updated</strong>: January 15, 2025</p>
 
-        <h2>Introduction</h2>
-        <p>Pocket Marcus ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Pocket Marcus mobile application.</p>
+        <h2>1. INTRODUCTION</h2>
+        <p>Pocket Marcus ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application ("App") that provides AI-powered Stoic philosophy guidance.</p>
 
-        <h2>Information We Collect</h2>
+        <h2>2. INFORMATION WE COLLECT</h2>
         
-        <h3>Information You Provide</h3>
+        <h3>2.1 Information You Provide</h3>
         <ul>
-            <li><strong>Chat Messages</strong>: Conversations you have with the AI are stored locally on your device</li>
-            <li><strong>Settings Preferences</strong>: Your chosen themes, AI providers, and app configurations</li>
-            <li><strong>Subscription Information</strong>: If you purchase a subscription, payment processing is handled by Apple</li>
+            <li><strong>Conversation Messages</strong>: Text messages you send to interact with Marcus Aurelius AI</li>
+            <li><strong>API Keys</strong>: If using your own API keys, they are stored locally on your device</li>
+            <li><strong>Subscription Information</strong>: Purchase and subscription data through App Store</li>
         </ul>
 
-        <h3>Automatically Collected Information</h3>
+        <h3>2.2 Automatically Collected Information</h3>
         <ul>
-            <li><strong>Device Information</strong>: Device type, operating system version for compatibility</li>
-            <li><strong>Usage Analytics</strong>: Basic app usage patterns to improve functionality (no personal data)</li>
+            <li><strong>Usage Data</strong>: App interaction patterns, response preferences, and feature usage</li>
+            <li><strong>Device Information</strong>: Device type, operating system version, app version</li>
         </ul>
 
-        <h2>How We Use Your Information</h2>
-        <p>We use the collected information to:</p>
+        <h3>2.3 Information We Do NOT Collect</h3>
         <ul>
-            <li>Provide and maintain the Pocket Marcus service</li>
-            <li>Process your conversations with the AI</li>
-            <li>Improve app functionality and user experience</li>
-            <li>Provide customer support when requested</li>
+            <li>Personal identifying information (name, email, phone number)</li>
+            <li>Location data</li>
+            <li>Device contacts or photos</li>
+            <li>Biometric data</li>
         </ul>
 
-        <h2>Data Storage and Security</h2>
+        <h2>3. THIRD-PARTY AI SERVICES</h2>
         
-        <h3>Local Storage</h3>
-        <ul>
-            <li>All your conversations are stored <strong>locally on your device</strong></li>
-            <li>Chat history does not leave your device unless you use external AI services</li>
-            <li>You can delete chat history at any time through the app</li>
-        </ul>
-
-        <h3>Third-Party AI Services</h3>
-        <p>If you choose to use external AI providers:</p>
-        <ul>
-            <li><strong>Google Gemini</strong>: Your messages are sent to Google's servers for processing according to Google's privacy policy</li>
-            <li><strong>OpenAI</strong>: Your messages are sent to OpenAI's servers according to OpenAI's privacy policy</li>
-            <li><strong>Anthropic Claude</strong>: Your messages are sent to Anthropic's servers according to Anthropic's privacy policy</li>
-            <li><strong>Ollama</strong>: If configured, connects to your chosen Ollama server</li>
-        </ul>
-
-        <h2>Third-Party Services</h2>
+        <h3>3.1 AI Provider Integration</h3>
+        <p>Our App integrates with multiple AI services to provide responses:</p>
         
-        <h3>Apple App Store</h3>
+        <div class="ai-provider-info">
+            <div class="ai-provider">
+                <div class="provider-name">Google Gemini API</div>
+                <ul>
+                    <li>Data Sent: Your conversation messages and context</li>
+                    <li>Purpose: Generate philosophical responses</li>
+                    <li>Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+                    <li>Data Processing: Google processes your messages according to their API terms</li>
+                </ul>
+            </div>
+            
+            <div class="ai-provider">
+                <div class="provider-name">OpenAI API</div>
+                <ul>
+                    <li>Data Sent: Your conversation messages and context</li>
+                    <li>Purpose: Generate philosophical responses</li>
+                    <li>Privacy Policy: <a href="https://openai.com/privacy">https://openai.com/privacy</a></li>
+                    <li>Data Processing: OpenAI processes your messages according to their API terms</li>
+                </ul>
+            </div>
+            
+            <div class="ai-provider">
+                <div class="provider-name">Anthropic Claude API</div>
+                <ul>
+                    <li>Data Sent: Your conversation messages and context</li>
+                    <li>Purpose: Generate philosophical responses</li>
+                    <li>Privacy Policy: <a href="https://www.anthropic.com/privacy">https://www.anthropic.com/privacy</a></li>
+                    <li>Data Processing: Anthropic processes your messages according to their API terms</li>
+                </ul>
+            </div>
+            
+            <div class="ai-provider">
+                <div class="provider-name">Ollama (Self-Hosted AI)</div>
+                <ul>
+                    <li>Data Processing: Sent to your configured Ollama server</li>
+                    <li>Privacy: Data sent to your own server or network</li>
+                    <li>Purpose: Private AI responses using your own infrastructure</li>
+                    <li>Note: You control the server location and data handling</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>3.2 API Key Security</h3>
         <ul>
-            <li>Subscription purchases are processed by Apple</li>
-            <li>Subject to Apple's Privacy Policy</li>
-            <li>We do not have access to your payment information</li>
+            <li><strong>User API Keys</strong>: Your API keys are stored locally on your device using iOS Keychain</li>
+            <li><strong>Other Tiers</strong>: We use our own API keys with built-in usage limits</li>
+            <li><strong>Encryption</strong>: All API keys are encrypted and never transmitted to our servers</li>
         </ul>
 
-        <h3>AI Providers (Optional)</h3>
-        <p>When you configure external AI services, your conversations may be processed by:</p>
+        <h2>4. HOW WE USE YOUR INFORMATION</h2>
+        
+        <h3>4.1 Primary Uses</h3>
         <ul>
-            <li>Google (Gemini API)</li>
-            <li>OpenAI (GPT API)</li>
-            <li>Anthropic (Claude API)</li>
-            <li>Your chosen Ollama server</li>
-        </ul>
-        <p>Each service has its own privacy policy governing data handling.</p>
-
-        <h2>Data Sharing</h2>
-        <p>We do not sell, trade, or rent your personal information to third parties. We may share information only:</p>
-        <ul>
-            <li>With your explicit consent</li>
-            <li>When required by law</li>
-            <li>To protect our rights or the safety of users</li>
+            <li>Provide AI-powered philosophical guidance</li>
+            <li>Maintain conversation context for coherent responses</li>
+            <li>Track usage limits per subscription tier</li>
+            <li>Improve app performance and user experience</li>
         </ul>
 
-        <h2>Children's Privacy</h2>
-        <p>Pocket Marcus is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us.</p>
-
-        <h2>Your Rights</h2>
-        <p>You have the right to:</p>
+        <h3>4.2 AI Processing</h3>
         <ul>
-            <li>Access your data (stored locally on your device)</li>
-            <li>Delete your conversations and app data</li>
-            <li>Modify your privacy preferences</li>
-            <li>Contact us with privacy concerns</li>
+            <li>Your messages are sent to selected AI providers to generate responses</li>
+            <li>We do not store conversation history on our servers</li>
+            <li>AI providers may temporarily process your data according to their policies</li>
+            <li>Local AI (Ollama) processing never leaves your device</li>
         </ul>
 
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy periodically. We will notify users of significant changes through the app or other appropriate means.</p>
-
-        <h2>Data Retention</h2>
+        <h2>5. DATA STORAGE AND SECURITY</h2>
+        
+        <h3>5.1 Local Storage</h3>
         <ul>
-            <li><strong>Chat conversations</strong>: Stored locally until you delete them</li>
-            <li><strong>App preferences</strong>: Stored until you uninstall the app</li>
-            <li><strong>Analytics data</strong>: Aggregated and anonymized, retained for service improvement</li>
+            <li><strong>Conversation History</strong>: Stored locally on your device</li>
+            <li><strong>User Preferences</strong>: Stored locally using iOS secure storage</li>
+            <li><strong>API Keys</strong>: Stored in iOS Keychain (when using your own keys)</li>
         </ul>
 
-        <h2>International Users</h2>
-        <p>Pocket Marcus is designed to work globally. Data processing may occur in various countries depending on your chosen AI provider.</p>
+        <h3>5.2 Server Storage</h3>
+        <ul>
+            <li><strong>Subscription Status</strong>: Processed through App Store Connect</li>
+            <li><strong>Usage Analytics</strong>: Anonymized and aggregated only</li>
+            <li><strong>No Personal Data</strong>: We do not store personal information on our servers</li>
+        </ul>
+
+        <h3>5.3 Security Measures</h3>
+        <ul>
+            <li>End-to-end encryption for API communications</li>
+            <li>Secure storage using iOS security frameworks</li>
+            <li>Regular security audits and updates</li>
+            <li>No data transmission to unauthorized third parties</li>
+        </ul>
+
+        <h2>6. YOUR RIGHTS AND CHOICES</h2>
+        
+        <h3>6.1 Data Control</h3>
+        <ul>
+            <li><strong>Clear Conversation History</strong>: Delete all local conversation data</li>
+            <li><strong>AI Provider Selection</strong>: Choose which AI services to use</li>
+            <li><strong>Subscription Management</strong>: Cancel or modify through App Store</li>
+        </ul>
+
+        <h3>6.2 Data Access</h3>
+        <ul>
+            <li><strong>Local Data</strong>: Access all your data stored locally on your device</li>
+            <li><strong>No Server Data</strong>: We do not store personal data on our servers to access</li>
+        </ul>
+
+        <h3>6.3 Data Deletion</h3>
+        <ul>
+            <li><strong>App Deletion</strong>: Removes all local data from your device</li>
+            <li><strong>Conversation Clear</strong>: Option to clear chat history in app settings</li>
+        </ul>
+
+        <h2>7. CHILDREN'S PRIVACY</h2>
+        <p>Our App is rated 4+ and suitable for all ages. We do not knowingly collect personal information from children under 13. The App focuses on philosophical education and does not contain inappropriate content for minors.</p>
 
         <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p>If you have questions about this Privacy Policy or our privacy practices, please contact us:</p>
+            <h2>8. CONTACT INFORMATION</h2>
+            <p>For privacy-related questions or concerns:</p>
             <p><strong>Email</strong>: <a href="mailto:developer@plugge.nu">developer@plugge.nu</a></p>
+        </div>
+
+        <h2>9. EFFECTIVE DATE</h2>
+        <p>This Privacy Policy is effective as of January 15, 2025 and was last updated on January 15, 2025.</p>
+
+        <div class="ai-provider-info">
+            <h3>AI Provider Acknowledgments</h3>
+            <div class="ai-provider">
+                <div class="provider-name">Google Gemini</div>
+                <p>This application uses Google's Gemini API to provide AI-powered responses. Google's privacy policy applies to data processed through their service.</p>
+            </div>
+            <div class="ai-provider">
+                <div class="provider-name">OpenAI</div>
+                <p>This application uses OpenAI's API to provide AI-powered responses. OpenAI's privacy policy applies to data processed through their service.</p>
+            </div>
+            <div class="ai-provider">
+                <div class="provider-name">Anthropic</div>
+                <p>This application uses Anthropic's Claude API to provide AI-powered responses. Anthropic's privacy policy applies to data processed through their service.</p>
+            </div>
+            <div class="ai-provider">
+                <div class="provider-name">Ollama</div>
+                <p>This application supports Ollama for self-hosted AI processing. When using Ollama, your data is sent to your configured Ollama server.</p>
+            </div>
         </div>
 
         <hr>
